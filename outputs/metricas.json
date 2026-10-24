@@ -10,11 +10,11 @@
   "valence_between_song_sd": 1.1742396819209755,
   "arousal_mean": 4.814028856825749,
   "arousal_between_song_sd": 1.2821871822374349,
-  "valence_arousal_correlation": 0.5700260639579721,
+  "valence_arousal_correlation": 0.5700260639579722,
   "mean_interrater_valence_sd": 1.502364039955605,
   "mean_interrater_arousal_sd": 1.4627192008879024,
   "valence_sd_over_1_5_pct": 49.55604883462819,
   "arousal_sd_over_1_5_pct": 45.56048834628191,
-  "static_dynamic_valence_correlation": 0.7344609385511053,
-  "static_dynamic_arousal_correlation": 0.6766995127931993
+  "static_dynamic_valence_correlation": 0.7344609385511046,
+  "static_dynamic_arousal_correlation": 0.6766995127931991
 }

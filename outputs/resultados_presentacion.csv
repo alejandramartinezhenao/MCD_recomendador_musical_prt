@@ -7,10 +7,10 @@ Mediana de evaluadores por canción,10.0,conteo
 Frecuencia dinámica,2.0,Hz
 Valencia media,4.90414539400666,escala 1-9
 Activación media,4.814028856825749,escala 1-9
-Correlación valencia-activación,0.5700260639579721,Pearson r
+Correlación valencia-activación,0.5700260639579722,Pearson r
 Desviación media entre evaluadores: valencia,1.502364039955605,desviación
 Desviación media entre evaluadores: activación,1.4627192008879024,desviación
 Canciones con desviación de valencia > 1.5,49.55604883462819,%
 Canciones con desviación de activación > 1.5,45.56048834628191,%
-Correlación estática-dinámica: valencia,0.7344609385511053,Pearson r
-Correlación estática-dinámica: activación,0.6766995127931993,Pearson r
+Correlación estática-dinámica: valencia,0.7344609385511046,Pearson r
+Correlación estática-dinámica: activación,0.6766995127931991,Pearson r
