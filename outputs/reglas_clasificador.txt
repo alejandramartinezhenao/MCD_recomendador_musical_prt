@@ -1,0 +1,22 @@
+|--- valencia_media <= 4.59
+|   |--- sesgo_activacion <= 0.44
+|   |   |--- sesgo_valencia <= -0.22
+|   |   |   |--- class: 2
+|   |   |--- sesgo_valencia >  -0.22
+|   |   |   |--- class: 2
+|   |--- sesgo_activacion >  0.44
+|   |   |--- sesgo_valencia <= -0.71
+|   |   |   |--- class: 2
+|   |   |--- sesgo_valencia >  -0.71
+|   |   |   |--- class: 1
+|--- valencia_media >  4.59
+|   |--- sesgo_activacion <= -0.28
+|   |   |--- valencia_media <= 5.31
+|   |   |   |--- class: 2
+|   |   |--- valencia_media >  5.31
+|   |   |   |--- class: 1
+|   |--- sesgo_activacion >  -0.28
+|   |   |--- sesgo_valencia <= -0.37
+|   |   |   |--- class: 1
+|   |   |--- sesgo_valencia >  -0.37
+|   |   |   |--- class: 1
