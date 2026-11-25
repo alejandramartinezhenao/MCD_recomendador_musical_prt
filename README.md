@@ -4,7 +4,8 @@ Este paquete contiene el material utilizado para obtener los resultados incluido
 
 ## Contenido
 
-- `analisis_deam_resultados_presentacion.ipynb`: notebook principal.
+- `fase_i_proyecto_final.ipynb`: **notebook final de la Fase I**, organizado en las 9 etapas metodológicas (inventario, unidad de análisis, validación, variables, exploratorio, K-Means, caracterización, árbol de decisión y prototipo con conclusiones). Reproduce las cifras de la presentación y añade pruebas de significancia y de estabilidad de los grupos.
+- `analisis_deam_resultados_presentacion.ipynb`: notebook usado para la presentación de avance.
 - `DEAM_Annotations.zip`: fuente de datos analizada.
 - `src/analisis_deam.py`: funciones reutilizables y validaciones automáticas.
 - `src/perfiles_recomendador.py`: Fase I (perfiles de anotación, K-Means, clasificador) y prototipo de recomendador emocional.
@@ -43,7 +44,7 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Abra `analisis_deam_resultados_presentacion.ipynb` y seleccione **Run All**.
+Abra `fase_i_proyecto_final.ipynb` (o `analisis_deam_resultados_presentacion.ipynb`) y seleccione **Run All**.
 
 ## Ejecución sin Jupyter
 
