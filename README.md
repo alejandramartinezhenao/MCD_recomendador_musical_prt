@@ -1,3 +1,46 @@
+# Recomendador musical basado en percepción emocional (DEAM)
+
+**Proyecto Aplicado I · Maestría en Ciencia de Datos** · Darío Alexander Ojeda Muñoz · Alejandra Martínez Henao
+
+## Demo en 1 minuto
+
+```bash
+pip install -r requirements.txt
+streamlit run app/app.py
+```
+
+En Windows también basta con doble clic en `iniciar_app.bat`. Se abre en el navegador (http://localhost:8501) con cinco pestañas:
+
+| Pestaña | Qué hace |
+|---|---|
+| 🎯 Recomendar por emoción | Elige emoción y perfil; mapa emocional y reproducción de las canciones |
+| 🧭 Descubre tu perfil | Califica 10 canciones y el árbol de la Fase I te asigna un perfil |
+| 🛤️ Ruta emocional | Lista que avanza gradualmente de una emoción a otra (principio iso) |
+| 🎙️ Analiza una canción | Sube un MP3: el modelo AST predice su emoción y recomienda canciones parecidas |
+| 📊 Resultados | Métricas de la Fase I y II |
+
+Para escuchar las canciones y analizar audio, la app busca el audio de DEAM en `D:/D nuevo/Proyecto_Aplicado` o en la carpeta indicada por la variable de entorno `DEAM_DATA_DIR`. La primera vez descarga el modelo AST (~350 MB) de Hugging Face.
+
+## Resultados principales
+
+| Fase | Resultado |
+|---|---|
+| I · Perfiles | 116 evaluadores, 2 perfiles (73 "más positividad y energía", 43 "más negatividad y calma"), silhouette 0,24 |
+| I · Clasificador | Árbol de decisión: 89,7 % de acierto vs. 62,9 % de la línea base |
+| II · Emoción desde el audio | AST (transfer learning) supera a openSMILE: valencia R² 0,43 → 0,54; activación R² 0,58 → 0,69 |
+| II · Recomendador | Con emoción predicha por AST, 74 % de las canciones recomendadas cae en el cuadrante correcto (azar 25 %) |
+| II · Personalización | Entre perfiles, las listas comparten en promedio 1 de 10 canciones |
+
+## Notebooks
+
+1. `fase_i_proyecto_final.ipynb` — Fase I en 9 etapas (perfiles, K-Means, árbol, prototipo).
+2. `fase_ii_audio_recomendador.ipynb` — Fase II (audio, transfer learning, evaluación del recomendador).
+3. `analisis_deam_resultados_presentacion.ipynb` — notebook de la presentación de avance.
+
+Para regenerar las representaciones de audio (≈ 25 min con GPU): `python src/fase2_audio.py --opensmile --ast`; luego `python src/fase2_modelos.py`. Pruebas: `python -m unittest discover -s tests`.
+
+---
+
 # Análisis reproducible de DEAM
 
 Este paquete contiene el material utilizado para obtener los resultados incluidos en la presentación del proyecto **Sistema recomendador musical basado en percepción emocional**.
